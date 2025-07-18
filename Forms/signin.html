@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title><style>
+    * {
+      box-sizing: border-box;
+    }
+
+    
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+       font-family: Arial; 
+    }
+
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 30px;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: max-content;
+      text-align: center;
+    }
+
+    label {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 5px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    button {
+      margin-top:3px;
+      padding: 5px;
+      font-size: 18px;
+    }
+
+    p {
+      font-weight: bold;
+      margin: 5px 0 0 0;
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 18px;
+      margin-bottom: 5px;
+      text-decoration: none;
+      color: blue;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>SignIn Page</h2>
+    <form action="./index.html" method="get" class="form">
+      <label>UserName</label>
+      <input type="text" placeholder="username" name="username" autocomplete="off">
+      <label>Email</label>
+      <input type="email" placeholder="email"name="username" autocomplete="off">
+      
+      <label>PassWord</label>
+      <input type="password" placeholder="password"  name="password">
+      
+      <button type="submit">Submit</button>
+      
+      <!-- <p> Have an Account</p> -->
+     
+    </form>
+  </div>
+</body>
+</html>
