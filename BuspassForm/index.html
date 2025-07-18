@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   .outer{text-align:center;}
+  </style>
+</head>
+<body>
+  <div class="outer">
+  <div  style="display:inline-block; background:#d5e7f8; padding:5px  20px; border-radius:30px">
+  <img src="https://tgsrtcpass.com/images/Tsrtc_new_logo.jpg" width="50" >
+  <h2 Style="color:blue">TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+  <h2>GENERAL BUS PASS APPLICATION </h2>
+</div>
+ <form action="./welcomepage.html" method="get">
+ <div style="display:inline-block;padding:5px 20px; border-radius:30px">
+  <fieldset><legend style="font-weight: bold;background-color: rgb(122, 122, 208) ;border-radius:5px; padding:5px;color:white; ">Application Details</legend>
+    
+  
+ <table style="border:none; text-align: left;" cellspacing="8px">
+  <tr><td><label for="name">Name</label><span style="color:rgb(255, 0, 0)">*</span></td><td><input type="text" id="name" name="name" placeholder="name" autocomplete="off" required><br>
+  <p style="color:rgb(255,0,0); margin-top:0px">(Maximum characters:20)</p></td>
+  <td> <label for="fathername">Father's/Guardians's Name</label><span style="color:rgb(255,0,0)">*</span></td><td><input id="fathername" name="fathername" type="text" autocomplete="off" placeholder="fathername" required></td>
+</tr>
+<tr><td><label  >Date Of birth</label><span style="color:rgb(255, 0, 0)">*</span></td><td><input type="date"></td>
+<td> <label for="gender" name="gender">Gender</label><span style="color:rgb(255, 0, 0)">*</span></td><td><input type="radio" id="gender" name="gender" value="Female"><label>Female</label><input type='radio' id="gender" name="gender" value="Male"><label>Male</label></td></tr>
+<tr><td><lable for="age">Age as on:</lable></td><td><input type="checkbox" id="age" name="age" value="Years"><label>Years(s)</label><input type="checkbox" name="age" id="age" value="Months"><label>Month(s)</label><input type="checkbox" id="age" name="age" value="Days"><label>Day(s)</label></td><td><label for="adhar">Adhar No</td><td></label><input type='tel' name="adhar" id="adhar" required ></td></tr>
+<tr><td><label for="whatsapp">WhatsApp No</label><span style="color:rgb(255, 0, 0)">*</span></td><td><input type='tel' id="whatsapp" name="whatsapp" required></td><td><label>E-mail Id</label><span style="color:rgb(255, 0, 0)">*</span></td><td><input type="email" required></td></tr>
+<tr><td><label for="photo">Photo</label><span style="color:rgb(255, 0, 0)">*</span></td>
+<td><input type="file" id="photo" name="photo" required></td></tr></table>
+</fieldset>
+<fieldset><legend style="font-weight: bold;background-color: rgb(122, 122, 208) ;border-radius:5px; padding:5px;color:white; ">Resindential Adress Details</legend>
+  <table style="border:none;text-align: left;" cellspacing="8px">
+    <tr><td><Label for="address" >Applications Adress</Label><span style="color:rgb(255, 0, 0)">*</span></td><td>
+      <textarea name="address" id="address" required></textarea>
+    </td>
+  <td><label for="district">District</label><span style="color:rgb(255, 0, 0)">*</span></td><td><input type="text" id="district" name="district" required></td></tr>
+  <tr><td><label for="mandal">Mandel</label><span style="color:rgb(255, 0, 0)">*</span></td><td><input type="text" id="mandal" name="mandal" required></td><td><label for="village">village</label><span style="color:rgb(255, 0, 0)">*</span></td>
+  <td><input type="text" id="village" name="village" required></td>
+<tr>
+  <td><label for="pincode">Pincode</label><span style="color:rgb(255, 0, 0)">*</span></td>
+  <td><input type="tel" id="pincode" name="pincode"></td>
+</tr>
+  </table>
+</fieldset>
+<fieldset>
+  <legend style="font-weight: bold;background-color: rgb(122, 122, 208) ;border-radius:5px; padding:5px;color:white; ">Pass Type Details</legend>
+  <table style="text-align: left;" cellspacing="8px">
+    <tr>
+      <td><label for="city">City</label><span style="color:rgb(255, 0, 0)">*</span></td>
+      <td><select name="city" id="city" required><option disabled selected>select city</option>
+      <option  value="hyderabad">Hyderabad</option>
+      <option  value="karimnagar">Karimnagar</option>
+      <option  value="warangal">warangal</option>
+   </select></td>
+      
+    </tr>
+    <tr><td><label for="passtype">Pass Type</label> <span style="color:rgb(255, 0, 0)">*</span></td><td>
+      <select name="passtype" id="passtype" required>select passtype mode
+        <option  value="regular">regular</option>
+        <option value="greater pass">Greater pass</option>
+        <option  value="general oridnary">general oridnary route pass mtly</option>
+        <option  value="ordinary pass">ordinary pass</option>
+      </select>
+    </td></tr>
+  </table >
+</fieldset>
+<fieldset>
+  <legend style="font-weight: bold;background-color: rgb(122, 122, 208) ;border-radius:5px; padding:5px;color:white; ">Mode of Payment & Pass Collection</legend>
+  <table  style="text-align: left;" cellspacing="8px">
+    <tr><td><label for="paymode">Payment Mode</label> <span style="color:rgb(255, 0, 0)">*</span></td><td><select name="paymod" id="paymode">
+      <option value="">select payment mode</option>
+      <option value="payment at counter">Payment at counter</option>
+    </select></td>
+</tr>
+<tr><td><label for="passmode" selected disabled>Pass Delivery Mode</label> <span style="color:rgb(255, 0, 0)">*</span></td>
+<td><select name="passmode" id="passmode">
+  <option  value="select pass mode" selected disabled>Select pass delivery mode</option>
+  <option  value="At counter">At Counter</option>
+</select></td></tr>
+<tr><td><label for="center">Center at which you want to collect pass</label> <span style="color:rgb(255, 0, 0)">*</span></td> <td><select name="center" id="center" required>
+  <option  value="select">select</option>
+  <option  value="rtc abids">rtc abids</option>
+  <option  value="rtc airport" name="center">rtc airport</option>
+   <option value="rtc nothing"> rtc nothing</option>
+</select></td></tr>
+  </table>
+</fieldset>
+ <input type="text"  value="myv5s5" style="text-align:center ; background-color: brown; border:none;font-weight:bold; color:white; font-size:15px; margin-top:6px; padding:4px"><img src="https://tgsrtcpass.com/images/reload.png" width="20" alt=""><br>
+ <input type="text" style="margin-top:6px"> <br>
+ <button style="background-color: rgb(237, 93, 194);border:none; color:white; font-weight: bold; margin-top:3px; font-size: 18px; padding:5px; border-radius: 8px;">Submit</button>
+ 
+ </div>
+ </form>
+</body>
+</html>
